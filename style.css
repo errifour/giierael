@@ -1,0 +1,302 @@
+/* ===========================================
+   PARA GIOVANNA ❤️
+   style.css - PARTE 1
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#040814;
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* =======================
+ESTRELAS
+======================= */
+
+#stars{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-5;
+
+    background:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:70px 70px,120px 120px;
+
+    background-position:0 0,40px 60px;
+
+    animation:starsMove 120s linear infinite;
+
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-300px);
+
+}
+
+}
+
+/* =======================
+LUA
+======================= */
+
+#moon{
+
+position:fixed;
+
+top:40px;
+
+right:35px;
+
+font-size:70px;
+
+cursor:pointer;
+
+user-select:none;
+
+animation:moonFloat 5s ease-in-out infinite;
+
+filter:drop-shadow(0 0 15px rgba(255,255,255,.6));
+
+z-index:99;
+
+}
+
+@keyframes moonFloat{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* =======================
+SEÇÕES
+======================= */
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+/* =======================
+TÍTULO
+======================= */
+
+.title{
+
+font-size:65px;
+
+font-family:'Great Vibes',cursive;
+
+color:#FFD5EC;
+
+margin-bottom:15px;
+
+text-shadow:0 0 25px hotpink;
+
+}
+
+.subtitle{
+
+font-size:26px;
+
+font-weight:300;
+
+margin-bottom:35px;
+
+}
+
+.intro{
+
+max-width:700px;
+
+line-height:1.9;
+
+font-size:20px;
+
+opacity:.9;
+
+}
+
+/* =======================
+BOTÕES
+======================= */
+
+button{
+
+margin-top:35px;
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+cursor:pointer;
+
+background:#ff4f91;
+
+color:white;
+
+transition:.35s;
+
+box-shadow:0 0 20px rgba(255,105,180,.4);
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 35px hotpink;
+
+}
+
+/* =======================
+CARTA
+======================= */
+
+.letter{
+
+margin-top:40px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+padding:40px;
+
+border-radius:20px;
+
+max-width:900px;
+
+line-height:2;
+
+font-size:20px;
+
+box-shadow:0 0 30px rgba(255,255,255,.08);
+
+}
+
+/* =======================
+GALERIA
+======================= */
+
+.galleryGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+width:100%;
+
+max-width:1100px;
+
+margin-top:50px;
+
+}
+
+.photo{
+
+height:240px;
+
+border:2px dashed rgba(255,255,255,.35);
+
+border-radius:20px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:55px;
+
+transition:.35s;
+
+background:rgba(255,255,255,.03);
+
+}
+
+.photo span{
+
+font-size:16px;
+
+margin-top:20px;
+
+padding:0 10px;
+
+}
+
+.photo:hover{
+
+transform:translateY(-10px);
+
+background:rgba(255,255,255,.08);
+
+border-color:#ff7db8;
+
+}

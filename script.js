@@ -208,9 +208,8 @@ function writeLetter(){
 
     type();
 
-}
-/* ==========================================
-   LUA SECRETA 🌙
+}/* ==========================================
+   LUA SECRETA
 ========================================== */
 
 const moon = document.getElementById("moon");
@@ -218,56 +217,34 @@ const secret = document.getElementById("secret");
 
 let moonClicks = 0;
 
+moon.addEventListener("click", () => {
 
-if(moon && secret){
+    moonClicks++;
 
+    moon.style.transform = "scale(1.25)";
 
-    moon.addEventListener("click",()=>{
+    setTimeout(() => {
 
+        moon.style.transform = "";
 
-        moonClicks++;
+    },200);
 
+    if(moonClicks >= 7){
 
-        moon.style.transform="scale(1.25)";
-        moon.style.filter="drop-shadow(0 0 35px white)";
+        secret.style.display = "flex";
 
+    }
 
-        setTimeout(()=>{
+});
 
+secret.addEventListener("click",()=>{
 
-            moon.style.transform="";
-            moon.style.filter="";
+    secret.style.display="none";
 
+    moonClicks=0;
 
-        },300);
+});
 
-
-
-        if(moonClicks >= 7){
-
-
-            secret.style.display="flex";
-
-
-        }
-
-
-    });
-
-
-
-    secret.addEventListener("click",()=>{
-
-
-        secret.style.display="none";
-
-        moonClicks=0;
-
-
-    });
-
-
-}
 /* ==========================================
    TELA FINAL
 ========================================== */
@@ -454,28 +431,10 @@ lastScreen.appendChild(musicButton);
    BRILHO NA LUA
 ========================================== */
 
-
-if(moon){
-
 setInterval(()=>{
 
 moon.animate(
 
-[
-{transform:"scale(1)"},
-{transform:"scale(1.08)"},
-{transform:"scale(1)"}
-],
-
-{
-duration:2200
-}
-
-);
-
-},5000);
-
-}
 [
 {transform:"scale(1)"},
 {transform:"scale(1.08)"},
@@ -556,4 +515,4 @@ ps.style.marginTop="40px";
 ps.style.opacity=".8";
 ps.style.fontStyle="italic";
 
-loveScreen.appendChild(ps);        
+loveScreen.appendChild(ps);

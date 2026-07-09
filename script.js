@@ -116,7 +116,7 @@ Oi, minha princesa minha Delli.
 
 Se você chegou até aqui...
 
-é porque eu quis guardar um pedacinho do meu coração em um lugar só nosso.
+eu quis guardar um pedacinho do meu coração em um lugar só nosso.
 
 Enquanto escrevia isso...
 
@@ -175,6 +175,24 @@ Cheio das nossas novas memórias
 Porque ele nunca foi feito para guardar o passado
 
 Ela foi criada para esperar pelo nosso futuro.
+
+Me desculpa se as vezes sou cinza 
+
+minha neurose deve achar estranho você conseguir deixar minha vida colorida 
+
+e as vezes apenas com um gesto de palavras ou uma atitude você muda todo meu dia
+
+Mal posso esperar pra te chamar de minha e nunca mais me preocupar se você vai ficar 
+
+as vezes bobo fico imaginando nós na nossa casa e ter você pra me abraçar 
+
+Nunca quis tanto alguém assim na minha vida
+
+Você sempre esteve marcada em mim como uma tatuagem sem tinta 
+
+deve ser por isso que não pensei duas vezes pra também ter marcado com tinta
+
+Você foi e vai ser de novo minha maior conquista 
 
 Eu te amo mais do que ontem e menos que amanhã.
 

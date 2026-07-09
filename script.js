@@ -218,7 +218,7 @@ function writeLetter(){
 
             i++;
 
-            setTimeout(type,55);
+            setTimeout(type,75);
 
         }
 

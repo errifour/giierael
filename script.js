@@ -178,8 +178,6 @@ este site esteja cheio
 
 Cheio das nossas novas memórias
 
-Porque ele nunca foi feito para guardar o passado
-
 Ele foi criada para esperar pelo nosso futuro.
 
 Mal posso esperar pra te chamar de minha e nunca mais me preocupar se você vai ficar 

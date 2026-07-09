@@ -300,3 +300,427 @@ background:rgba(255,255,255,.08);
 border-color:#ff7db8;
 
 }
+/* ===========================================
+   STYLE.CSS - PARTE 2
+=========================================== */
+
+/* TEXTO DA GALERIA */
+
+.galleryText{
+
+max-width:900px;
+
+line-height:2;
+
+font-size:20px;
+
+margin-top:30px;
+
+opacity:.9;
+
+}
+
+/* CONTADOR */
+
+#counter{
+
+display:flex;
+
+gap:25px;
+
+margin-top:45px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+#counter div{
+
+width:120px;
+
+height:120px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.08);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 0 20px rgba(255,255,255,.08);
+
+transition:.3s;
+
+}
+
+#counter div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px hotpink;
+
+}
+
+.number{
+
+font-size:40px;
+
+font-weight:bold;
+
+color:#ff9fd0;
+
+}
+
+.label{
+
+margin-top:10px;
+
+font-size:15px;
+
+opacity:.8;
+
+}
+
+/* CARTA */
+
+#typingText{
+
+white-space:pre-line;
+
+text-align:left;
+
+font-size:20px;
+
+line-height:2;
+
+}
+
+/* HISTÓRIA */
+
+.story-box{
+
+max-width:850px;
+
+font-size:30px;
+
+line-height:2;
+
+font-weight:300;
+
+}
+
+.storyText{
+
+min-height:150px;
+
+}
+
+/* SURPRESA FINAL */
+
+#loveExplosion{
+
+position:fixed;
+
+inset:0;
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+background:rgba(0,0,0,.95);
+
+z-index:9999;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+#loveExplosion h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:80px;
+
+color:#ffd2ea;
+
+margin-bottom:20px;
+
+text-shadow:0 0 25px hotpink;
+
+}
+
+#loveExplosion p{
+
+max-width:700px;
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+/* MENSAGEM SECRETA */
+
+#secretMessage{
+
+display:none;
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.95);
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+padding:30px;
+
+text-align:center;
+
+z-index:99999;
+
+}
+
+#secretMessage h2{
+
+font-size:60px;
+
+font-family:'Great Vibes',cursive;
+
+margin-bottom:25px;
+
+color:#FFD5EC;
+
+}
+
+#secretMessage p{
+
+max-width:700px;
+
+line-height:2;
+
+font-size:22px;
+
+}
+
+/* ROLAGEM */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff4f91;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#09101f;
+
+}
+/* ===========================================
+   STYLE.CSS - PARTE 3
+=========================================== */
+
+/* Fundo com brilho suave */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(255,192,203,.08), transparent 25%),
+        radial-gradient(circle at 50% 80%, rgba(173,216,230,.06), transparent 30%);
+    pointer-events:none;
+    z-index:-4;
+}
+
+/* Títulos */
+section h2{
+    font-size:42px;
+    margin-bottom:25px;
+    color:#ffd6eb;
+    text-shadow:0 0 15px rgba(255,105,180,.5);
+}
+
+/* Parágrafos */
+section p{
+    max-width:850px;
+    line-height:2;
+    font-size:19px;
+}
+
+/* Corações flutuando */
+
+#hearts{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-2;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ff7fb9;
+    opacity:.7;
+    animation:heartUp linear forwards;
+}
+
+@keyframes heartUp{
+
+0%{
+    transform:translateY(0) scale(.6);
+    opacity:0;
+}
+
+10%{
+    opacity:.8;
+}
+
+90%{
+    opacity:.8;
+}
+
+100%{
+    transform:translateY(-120vh) scale(1.4);
+    opacity:0;
+}
+
+}
+
+/* Partículas */
+
+#particles{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-3;
+
+}
+
+.particle{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+border-radius:50%;
+
+background:white;
+
+opacity:.8;
+
+animation:particleMove linear infinite;
+
+}
+
+@keyframes particleMove{
+
+from{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
+}
+
+}
+
+/* Botões */
+
+button:active{
+
+transform:scale(.96);
+
+}
+
+/* Fotos */
+
+.photo{
+
+cursor:pointer;
+
+}
+
+.photo:hover span{
+
+color:#ffd5ec;
+
+}
+
+/* Última frase */
+
+#final h1{
+
+margin-top:50px;
+
+font-size:65px;
+
+font-family:'Great Vibes',cursive;
+
+color:#ffd8ef;
+
+text-shadow:0 0 25px hotpink;
+
+}
+
+/* Responsividade */
+
+@media(max-width:900px){
+
+.title{
+
+font-size:48px;
+
+}
+
+.subtitle

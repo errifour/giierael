@@ -208,8 +208,9 @@ function writeLetter(){
 
     type();
 
-}/* ==========================================
-   LUA SECRETA
+}
+/* ==========================================
+   LUA SECRETA 🌙
 ========================================== */
 
 const moon = document.getElementById("moon");
@@ -217,34 +218,56 @@ const secret = document.getElementById("secret");
 
 let moonClicks = 0;
 
-moon.addEventListener("click", () => {
 
-    moonClicks++;
+if(moon && secret){
 
-    moon.style.transform = "scale(1.25)";
 
-    setTimeout(() => {
+    moon.addEventListener("click",()=>{
 
-        moon.style.transform = "";
 
-    },200);
+        moonClicks++;
 
-    if(moonClicks >= 7){
 
-        secret.style.display = "flex";
+        moon.style.transform="scale(1.25)";
+        moon.style.filter="drop-shadow(0 0 35px white)";
 
-    }
 
-});
+        setTimeout(()=>{
 
-secret.addEventListener("click",()=>{
 
-    secret.style.display="none";
+            moon.style.transform="";
+            moon.style.filter="";
 
-    moonClicks=0;
 
-});
+        },300);
 
+
+
+        if(moonClicks >= 7){
+
+
+            secret.style.display="flex";
+
+
+        }
+
+
+    });
+
+
+
+    secret.addEventListener("click",()=>{
+
+
+        secret.style.display="none";
+
+        moonClicks=0;
+
+
+    });
+
+
+}
 /* ==========================================
    TELA FINAL
 ========================================== */

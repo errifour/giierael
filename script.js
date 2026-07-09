@@ -114,9 +114,9 @@ const letter=`
 
 Oi, minha princesa minha Delli.
 
-Se você chegou até aqui...
+Eu fiz esse site...
 
-é porque eu quis guardar um pedacinho do meu coração em um lugar só nosso.
+porque eu quis guardar um pedacinho do meu coração em um lugar só nosso.
 
 Enquanto escrevia isso...
 
@@ -208,42 +208,6 @@ function writeLetter(){
 
     type();
 
-}/* ==========================================
-   LUA SECRETA
-========================================== */
-
-const moon = document.getElementById("moon");
-const secret = document.getElementById("secret");
-
-let moonClicks = 0;
-
-moon.addEventListener("click", () => {
-
-    moonClicks++;
-
-    moon.style.transform = "scale(1.25)";
-
-    setTimeout(() => {
-
-        moon.style.transform = "";
-
-    },200);
-
-    if(moonClicks >= 7){
-
-        secret.style.display = "flex";
-
-    }
-
-});
-
-secret.addEventListener("click",()=>{
-
-    secret.style.display="none";
-
-    moonClicks=0;
-
-});
 
 /* ==========================================
    TELA FINAL
@@ -516,3 +480,57 @@ ps.style.opacity=".8";
 ps.style.fontStyle="italic";
 
 loveScreen.appendChild(ps);
+
+/* ==========================================
+   SEGREDO DA LUA 🌙
+========================================== */
+
+let moonClicks = 0;
+
+const moon = document.getElementById("moon");
+const secret = document.getElementById("secret");
+
+
+if (moon && secret) {
+
+
+    moon.addEventListener("click", function(){
+
+
+        moonClicks++;
+
+
+        // efeito de brilho a cada clique
+        moon.style.transform = "scale(1.15)";
+        moon.style.filter = "drop-shadow(0 0 40px white)";
+
+
+        setTimeout(()=>{
+
+
+            moon.style.transform = "scale(1)";
+            moon.style.filter = "drop-shadow(0 0 20px rgba(255,255,255,.8))";
+
+
+        },300);
+
+
+
+        // depois de 7 cliques abre a mensagem
+
+        if(moonClicks === 7){
+
+
+            secret.style.display = "flex";
+
+
+            moonClicks = 0;
+
+
+        }
+
+
+    });
+
+
+}    

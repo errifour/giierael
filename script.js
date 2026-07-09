@@ -100,7 +100,7 @@ function writeIntro(){
 
         }
 
-    },40);
+    },70);
 
 }
 

@@ -1,3 +1,5 @@
+alert("teste");
+
 const screens=document.querySelectorAll(".screen");
 
 const nextButtons=document.querySelectorAll(".next");

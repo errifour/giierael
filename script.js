@@ -515,42 +515,4 @@ ps.style.marginTop="40px";
 ps.style.opacity=".8";
 ps.style.fontStyle="italic";
 
-loveScreen.appendChild(ps);
-
-// SEGREDO DA LUA 🌙
-
-const moon = document.getElementById("moon");
-const secret = document.getElementById("secret");
-
-let moonClicks = 0;
-
-if (moon && secret) {
-
-    moon.addEventListener("click", () => {
-
-        moonClicks++;
-
-        // brilho a cada clique
-        moon.style.transform = "scale(1.15)";
-        moon.style.filter = "drop-shadow(0 0 35px white)";
-
-        setTimeout(() => {
-
-            moon.style.transform = "scale(1)";
-            moon.style.filter = "";
-
-        }, 300);
-
-
-        // abre no 7º clique
-        if (moonClicks === 7) {
-
-            secret.style.display = "flex";
-
-            moonClicks = 0;
-
-        }
-
-    });
-
-}
+loveScreen.appendChild(ps);        

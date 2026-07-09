@@ -454,10 +454,28 @@ lastScreen.appendChild(musicButton);
    BRILHO NA LUA
 ========================================== */
 
+
+if(moon){
+
 setInterval(()=>{
 
 moon.animate(
 
+[
+{transform:"scale(1)"},
+{transform:"scale(1.08)"},
+{transform:"scale(1)"}
+],
+
+{
+duration:2200
+}
+
+);
+
+},5000);
+
+}
 [
 {transform:"scale(1)"},
 {transform:"scale(1.08)"},

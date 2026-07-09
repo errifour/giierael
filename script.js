@@ -124,7 +124,7 @@ percebi que não quero viver apenas das lembranças que tivemos.
 
 O que eu realmente desejo...
 
-é criar novas
+é criar novas páginas com você 
 
 Novas risadas
 
@@ -145,6 +145,8 @@ Porque existe carinho no seu olhar
 Porque as suas gracinhas deixam qualquer dia mais leve
 
 Porque ouvir sua risada seria o despertador perfeito pra começar bem meu dia
+
+Eu admiro você e toda sua força você é uma mulher incrível em todos os sentidos 
 
 Nunca imaginei encontrar você
 
@@ -170,7 +172,7 @@ este site esteja cheio
 
 Cheio das nossas novas memórias
 
-Porque ele nunca foi feita para guardar o passado
+Porque ele nunca foi feito para guardar o passado
 
 Ela foi criada para esperar pelo nosso futuro.
 
@@ -178,7 +180,7 @@ Eu te amo mais do que ontem e menos que amanhã.
 
   ❤️
 
-- 44
+- delli deixa eu ser seu roxo?
 
 `;
 

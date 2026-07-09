@@ -112,7 +112,7 @@ const letterText=document.getElementById("letterText");
 
 const letter=`
 
-Oi, Giovanna.
+Oi, minha princesa minha Delli.
 
 Se você chegou até aqui...
 
@@ -124,61 +124,61 @@ percebi que não quero viver apenas das lembranças que tivemos.
 
 O que eu realmente desejo...
 
-é criar novas.
+é criar novas
 
-Novas risadas.
+Novas risadas
 
-Novas fotos.
+Novas fotos
 
-Novos abraços.
+Novos abraços
 
-Novos cafés.
+Novos beijos 
 
-Novas viagens.
+Novas viagen
 
-Sempre digo que você é o meu paraíso pessoal.
+Sempre digo que você é o meu paraíso pessoal
 
-Porque existe paz no seu sorriso.
+Porque existe paz no seu sorriso
 
-Porque existe carinho no seu olhar.
+Porque existe carinho no seu olhar
 
-Porque as suas gracinhas deixam qualquer dia mais leve.
+Porque as suas gracinhas deixam qualquer dia mais leve
 
-Porque ouvir sua risada sempre faz meu coração sorrir.
+Porque ouvir sua risada sempre faz me faz rir também
 
-Nunca imaginei encontrar alguém exatamente como você.
+Nunca imaginei encontrar alguém exatamente como você
 
 Mas, de alguma forma...
 
-parece que sempre esperei por você.
+sempre esperei por você minha eva.
 
-Hoje eu não quero prometer perfeição.
+Hoje eu não quero prometer perfeição
 
-Quero prometer dedicação.
+Quero prometer dedicação
 
-Paciência.
+Paciência
 
-Respeito.
+Respeito
 
-Carinho.
+Carinho
 
-E vontade de construir um futuro bonito ao seu lado.
+E vontade de construir um futuro ao seu lado.
 
 Espero que, um dia...
 
-esta galeria esteja cheia.
+este site esteja cheio
 
-Cheia das nossas novas memórias.
+Cheia das nossas novas memórias
 
-Porque ela nunca foi feita para guardar o passado.
+Porque ele nunca foi feita para guardar o passado
 
 Ela foi criada para esperar pelo nosso futuro.
 
-Eu te amo.
+Eu te amo mais do que ontem e menos que amanhã.
 
 ❤️
 
-- Israel
+- 44
 
 `;
 

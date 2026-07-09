@@ -1,37 +1,52 @@
-const screens=document.querySelectorAll(".screen");
+/* ==========================================
+   NAVEGAÇÃO ENTRE TELAS
+========================================== */
 
-const nextButtons=document.querySelectorAll(".next");
+const screens = document.querySelectorAll(".screen");
 
-let current=0;
+const nextButtons = document.querySelectorAll(".next");
+
+let current = 0;
+
 
 function showScreen(index){
 
-screens.forEach(screen=>{
+    screens.forEach(screen => {
 
-screen.classList.remove("active");
+        screen.classList.remove("active");
 
-});
+    });
 
-screens[index].classList.add("active");
+
+    screens[index].classList.add("active");
 
 }
 
-nextButtons.forEach(button=>{
 
-    button.addEventListener("click",()=>{
+
+nextButtons.forEach(button => {
+
+
+    button.addEventListener("click", function(){
+
 
         current++;
 
+
         if(current < screens.length){
 
+
             showScreen(current);
+
 
             if(current === 1){
 
                 introIndex = 0;
+
                 writeIntro();
 
             }
+
 
             if(current === 2){
 
@@ -39,9 +54,12 @@ nextButtons.forEach(button=>{
 
             }
 
+
         }
 
+
     });
+
 
 });
 

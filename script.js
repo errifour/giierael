@@ -134,7 +134,7 @@ Novos abraços
 
 Novos beijos 
 
-Novas viagen
+Novas viagens 
 
 Sempre digo que você é o meu paraíso pessoal
 
@@ -144,9 +144,9 @@ Porque existe carinho no seu olhar
 
 Porque as suas gracinhas deixam qualquer dia mais leve
 
-Porque ouvir sua risada sempre faz me faz rir também
+Porque ouvir sua risada seria o despertador perfeito pra começar bem meu dia
 
-Nunca imaginei encontrar alguém exatamente como você
+Nunca imaginei encontrar você
 
 Mas, de alguma forma...
 
@@ -168,7 +168,7 @@ Espero que, um dia...
 
 este site esteja cheio
 
-Cheia das nossas novas memórias
+Cheio das nossas novas memórias
 
 Porque ele nunca foi feita para guardar o passado
 
@@ -176,7 +176,7 @@ Ela foi criada para esperar pelo nosso futuro.
 
 Eu te amo mais do que ontem e menos que amanhã.
 
-❤️
+  ❤️
 
 - 44
 
@@ -509,7 +509,7 @@ const ps=document.createElement("p");
 
 ps.innerHTML=
 
-"Espero que um dia nossa galeria esteja cheia das memórias que ainda vamos criar.";
+"Você é o amor da minha vida, minha predestinada, yin do meu yang minha vilã.";
 
 ps.style.marginTop="40px";
 ps.style.opacity=".8";

@@ -18,17 +18,30 @@ screens[index].classList.add("active");
 
 nextButtons.forEach(button=>{
 
-button.addEventListener("click",()=>{
+    button.addEventListener("click",()=>{
 
-current++;
+        current++;
 
-if(current<screens.length){
+        if(current < screens.length){
 
-showScreen(current);
+            showScreen(current);
 
-}
+            if(current === 1){
 
-});
+                introIndex = 0;
+                writeIntro();
+
+            }
+
+            if(current === 2){
+
+                writeLetter();
+
+            }
+
+        }
+
+    });
 
 });
 

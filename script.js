@@ -1,6 +1,4 @@
-/* ==========================================
-   NAVEGAÇÃO ENTRE TELAS
-========================================== */
+alert("JavaScript funcionando");
 
 const screens = document.querySelectorAll(".screen");
 

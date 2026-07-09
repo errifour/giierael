@@ -404,7 +404,7 @@ musicButton.style.marginTop="30px";
 musicButton.onclick=()=>{
 
 window.open(
-"https://www.youtube.com/results?search_query=Delacruz+V%C3%ADcio+de+Amor",
+"https://youtu.be/lm50i_r-pd8?si=LZ-vsAbXFNZ_k3t9",
 "_blank"
 );
 

@@ -156,7 +156,9 @@ Nunca imaginei encontrar você
 
 Mas, de alguma forma...
 
-sempre esperei por você minha eva.
+sempre esperei por você eva.
+
+Su não blefei eu espero que Deus atenda meu pedido egoísta e deixe eu amar você como amo hoje
 
 Hoje eu não quero prometer perfeição
 
@@ -179,12 +181,6 @@ Cheio das nossas novas memórias
 Porque ele nunca foi feito para guardar o passado
 
 Ele foi criada para esperar pelo nosso futuro.
-
-Me desculpa se as vezes sou cinza 
-
-Minha neurose deve achar estranho você conseguir deixar minha vida colorida 
-
-e as vezes apenas com um gesto de palavras ou uma atitude você muda todo meu dia
 
 Mal posso esperar pra te chamar de minha e nunca mais me preocupar se você vai ficar 
 
@@ -531,7 +527,7 @@ const ps=document.createElement("p");
 
 ps.innerHTML=
 
-"Você é o amor da minha vida, minha predestinada, yin do meu yang minha vilã.";
+"Você é o amor da minha vida,sempre vai ser, o yin do meu yang minha vilã.";
 
 ps.style.marginTop="40px";
 ps.style.opacity=".8";

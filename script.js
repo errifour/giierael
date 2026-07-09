@@ -200,7 +200,7 @@ function writeLetter(){
 
             i++;
 
-            setTimeout(type,28);
+            setTimeout(type,55);
 
         }
 
@@ -509,7 +509,7 @@ const ps=document.createElement("p");
 
 ps.innerHTML=
 
-"✨ P.S.: Espero que um dia nossa galeria esteja cheia das memórias que ainda vamos criar.";
+"Espero que um dia nossa galeria esteja cheia das memórias que ainda vamos criar.";
 
 ps.style.marginTop="40px";
 ps.style.opacity=".8";

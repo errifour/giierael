@@ -158,7 +158,7 @@ Mas, de alguma forma...
 
 sempre esperei por você eva.
 
-Eu não blefei eu espero que Deus atenda meu pedido egoísta e deixe eu amar você como amo hoje
+Su não blefei eu espero que Deus atenda meu pedido egoísta e deixe eu amar você como amo hoje
 
 Hoje eu não quero prometer perfeição
 

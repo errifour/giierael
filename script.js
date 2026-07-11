@@ -2,6 +2,8 @@ const screens=document.querySelectorAll(".screen");
 
 const nextButtons=document.querySelectorAll(".next");
 
+const backButtons=document.querySelectorAll(".back");
+
 let current=0;
 
 function showScreen(index){
@@ -38,6 +40,22 @@ nextButtons.forEach(button=>{
                 writeLetter();
 
             }
+
+        }
+
+    });
+
+});
+
+backButtons.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        if(current > 0){
+
+            current--;
+
+            showScreen(current);
 
         }
 

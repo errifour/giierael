@@ -263,7 +263,7 @@ moon.addEventListener("click", () => {
 
     },200);
 
-if(moonClicks >= 4){
+         if(moonClicks >= 4){
 
         secret.style.display = "flex";
 

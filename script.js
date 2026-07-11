@@ -257,6 +257,19 @@ finalButton.addEventListener("click",()=>{
     createExplosion();
 
 });
+// VOLTAR DA TELA FINAL
+
+const backFinal = document.getElementById("backFinal");
+
+backFinal.addEventListener("click",()=>{
+
+    loveScreen.style.display="none";
+
+    showScreen(5);
+
+    current = 5;
+
+});
 
 /* ==========================================
    CORAÇÕES FLUTUANDO

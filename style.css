@@ -81,28 +81,18 @@ transform:translateY(-350px);
 /* ========= LUA ========= */
 
 #moon{
+    position: fixed;
+    right: 40px;
+    top: 35px;
+    font-size: 70px;
+    cursor: pointer;
+    z-index: 999999;
+    pointer-events: auto;
 
-position:fixed;
-
-right:40px;
-
-top:35px;
-
-font-size:70px;
-
-cursor:pointer;
-
-z-index:9999;
-   
-
-user-select:none;
-
-filter:drop-shadow(0 0 20px rgba(255,255,255,.8));
-
-animation:moon 5s ease-in-out infinite;
-
-transition:.3s;
-
+    user-select: none;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,.8));
+    animation: moon 5s ease-in-out infinite;
+    transition: .3s;
 }
 
 @keyframes moon{

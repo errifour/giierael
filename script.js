@@ -257,6 +257,35 @@ finalButton.addEventListener("click",()=>{
     createExplosion();
 
 });
+// animação suave no botão final
+
+setInterval(()=>{
+
+    finalButton.animate(
+
+        [
+            {
+                transform:"scale(1)"
+            },
+
+            {
+                transform:"scale(1.08)"
+            },
+
+            {
+                transform:"scale(1)"
+            }
+
+        ],
+
+        {
+            duration:1500,
+            easing:"ease-in-out"
+        }
+
+    );
+
+},3000);
 // VOLTAR DA TELA FINAL
 
 const backFinal = document.getElementById("backFinal");

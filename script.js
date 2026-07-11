@@ -242,43 +242,7 @@ function writeLetter(){
 
     type();
 
-}/* ==========================================
-   LUA SECRETA
-========================================== */
-
-const moon = document.getElementById("moon");
-const secret = document.getElementById("secret");
-
-let moonClicks = 0;
-
-moon.addEventListener("click", () => {
-
-    moonClicks++;
-
-    moon.style.transform = "scale(1.25)";
-
-    setTimeout(() => {
-
-        moon.style.transform = "";
-
-    },200);
-
-         if(moonClicks >= 4){
-
-        secret.style.display = "flex";
-
-    }
-
-});
-
-secret.addEventListener("click",()=>{
-
-    secret.style.display="none";
-
-    moonClicks=0;
-
-});
-
+}
 /* ==========================================
    TELA FINAL
 ========================================== */

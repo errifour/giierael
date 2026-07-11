@@ -426,30 +426,6 @@ const lastScreen=document.getElementById("screen6");
 lastScreen.appendChild(musicButton);
 
 /* ==========================================
-   BRILHO NA LUA
-========================================== */
-
-setInterval(()=>{
-
-moon.animate(
-
-[
-{transform:"scale(1)"},
-{transform:"scale(1.08)"},
-{transform:"scale(1)"}
-],
-
-{
-
-duration:2200
-
-}
-
-);
-
-},5000);
-
-/* ==========================================
    EFEITO NAS FOTOS
 ========================================== */
 

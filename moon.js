@@ -2,7 +2,6 @@ const moon = document.getElementById("moon");
 const secret = document.getElementById("secret");
 
 let clicks = 0;
-let descoberta = false;
 
 
 const brilho = [
@@ -18,30 +17,6 @@ const brilho = [
 
 moon.addEventListener("click", () => {
 
-
-    // se já descobriu o segredo
-
-    if(descoberta){
-
-        criarEstrelas();
-
-        moon.animate(
-            [
-                {transform:"scale(1)"},
-                {transform:"scale(1.15)"},
-                {transform:"scale(1)"}
-            ],
-            {
-                duration:400
-            }
-        );
-
-        return;
-
-    }
-
-
-
     clicks++;
 
 
@@ -49,6 +24,8 @@ moon.addEventListener("click", () => {
     brilho[Math.min(clicks - 1, 3)];
 
 
+
+    // animação da lua
 
     moon.animate(
         [
@@ -61,11 +38,12 @@ moon.addEventListener("click", () => {
             },
 
             {
-                transform:"scale(1)"
+                transform:"scale(1) rotate(0deg)"
             }
         ],
         {
-            duration:500
+            duration:500,
+            easing:"ease-out"
         }
     );
 
@@ -75,6 +53,7 @@ moon.addEventListener("click", () => {
 
 
 
+    // terceiro clique
     if(clicks === 3){
 
         criarCoracao();
@@ -82,6 +61,8 @@ moon.addEventListener("click", () => {
     }
 
 
+
+    // quarto clique abre segredo
 
     if(clicks >= 4){
 
@@ -94,13 +75,14 @@ moon.addEventListener("click", () => {
 
             secret.style.display="flex";
 
+            moon.style.filter=brilho[0];
+
         },800);
 
 
 
         clicks=0;
 
-
     }
 
 
@@ -109,112 +91,7 @@ moon.addEventListener("click", () => {
 
 
 
-
-// explosão da descoberta
-
-function explosaoLua(){
-
-
-    moon.animate(
-
-        [
-            {
-                transform:"scale(1)"
-            },
-
-            {
-                transform:"scale(4)",
-                filter:"brightness(5)"
-            },
-
-            {
-                transform:"scale(1)"
-            }
-
-        ],
-
-        {
-            duration:900
-        }
-
-    );
-
-
-}
-
-
-
-
-// quando fechar a mensagem
-
-secret.addEventListener("click",(e)=>{
-
-
-    if(e.target === secret){
-
-
-        secret.style.display="none";
-
-
-        descoberta=true;
-
-
-        transformarLua();
-
-
-    }
-
-
-});
-
-
-
-
-
-
-// nova aparência depois de encontrada
-
-function transformarLua(){
-
-
-    moon.innerHTML="🌙❤️";
-
-
-    moon.style.fontSize="75px";
-
-
-    moon.style.filter=
-    "drop-shadow(0 0 50px #ffb6d9)";
-
-
-
-    moon.animate(
-
-        [
-            {
-                filter:"drop-shadow(0 0 30px #fff)"
-            },
-
-            {
-                filter:"drop-shadow(0 0 80px #ff69b4)"
-            }
-
-        ],
-
-        {
-            duration:1500,
-            iterations:Infinity,
-            direction:"alternate"
-        }
-
-    );
-
-
-}
-
-
-
-
+// cria partículas de estrelas
 
 function criarEstrelas(){
 
@@ -251,13 +128,16 @@ function criarEstrelas(){
 
 
 
-        const x=(Math.random()-0.5)*200;
-        const y=(Math.random()-0.5)*200;
+        const x=
+        (Math.random()-0.5)*200;
+
+
+        const y=
+        (Math.random()-0.5)*200;
 
 
 
         estrela.animate(
-
             [
                 {
                     transform:"translate(0,0)",
@@ -268,13 +148,10 @@ function criarEstrelas(){
                     transform:`translate(${x}px,${y}px)`,
                     opacity:0
                 }
-
             ],
-
             {
                 duration:1000
             }
-
         );
 
 
@@ -285,15 +162,14 @@ function criarEstrelas(){
 
         },1000);
 
-
     }
-
 
 }
 
 
 
 
+// coração no terceiro clique
 
 function criarCoracao(){
 
@@ -311,7 +187,6 @@ function criarCoracao(){
     heart.style.left=
     moon.getBoundingClientRect().left+20+"px";
 
-
     heart.style.top=
     moon.getBoundingClientRect().top+20+"px";
 
@@ -328,13 +203,14 @@ function criarCoracao(){
     heart.animate(
 
         [
+
             {
-                transform:"translateY(0)",
+                transform:"translateY(0) scale(1)",
                 opacity:1
             },
 
             {
-                transform:"translateY(-100px)",
+                transform:"translateY(-100px) scale(1.5)",
                 opacity:0
             }
 
@@ -356,3 +232,62 @@ function criarCoracao(){
 
 
 }
+
+
+
+
+
+// efeito quando a lua revela o segredo
+
+function explosaoLua(){
+
+
+    moon.animate(
+
+        [
+
+            {
+                transform:"scale(1)",
+                filter:"brightness(1)"
+            },
+
+
+            {
+                transform:"scale(4)",
+                filter:"brightness(5)"
+            },
+
+
+            {
+                transform:"scale(1)",
+                filter:"brightness(1)"
+            }
+
+        ],
+
+        {
+            duration:800
+        }
+
+    );
+
+
+}
+
+
+
+
+
+// fechar segredo
+
+secret.addEventListener("click",(e)=>{
+
+
+    if(e.target === secret){
+
+        secret.style.display="none";
+
+    }
+
+
+});
